@@ -1,0 +1,44 @@
+{
+  "name": "Travisso Auto-Reservation",
+  "version": "1.0.1",
+  "description": "Auto-reservation for travisso court pinkball every Monday at 8.pm ~ 10.pm",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "child_process": "^1.0.2",
+    "mocha": "^10.7.0",
+    "moment-timezone": "^0.5.45",
+    "node-cron": "^3.0.3",
+    "puppeteer": "^22.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-checkly": "0.0.5",
+    "eslint-plugin-mocha": "^4.12.1",
+    "file-system": "^2.2.2",
+    "jest": "^21.2.1",
+    "js-comments": "^0.5.4",
+    "lodash": "^4.17.19"
+  },
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "checkly",
+      "checkly/node"
+    ],
+    "rules": {
+      "no-undef": "warn"
+    },
+    "plugins": [
+      "mocha"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uranuspack/travisso-auto-reservation.git"
+  },
+  "author": "Uranus",
+  "license": "MIT",
+  "homepage": "https://github.com/uranuspack/travisso-auto-reservation#readme"
+}
